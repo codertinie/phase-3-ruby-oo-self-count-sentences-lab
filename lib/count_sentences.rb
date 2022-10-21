@@ -16,7 +16,7 @@ class String
 
   def count_sentences 
     #add a filter to only count sentences that are not empty.
-    self.split(/[.!?]/).filter {|sentence| !sentence.empty?}.length
+    self.split(/[.!?]/).filter {|sentence| !sentence.empty?}.count
   end
   binding.pry
 end
